@@ -28,46 +28,39 @@
 
 ## Installation
 
+1) Clone the project
 ```bash
-$ npm install
+$ git clone https://github.com/levon80999/nest-js-api.git
+
+or if you use ssh connection
+
+$ git clone git@github.com:levon80999/nest-js-api.git
+```
+2) Copy .env file
+```bash
+$ cd nest-js-api
+
+$ cp .env.example .env
 ```
 
-## Running the app
+## Running the application
 
 ```bash
-# development
-$ npm run start
+Up the application 
 
-# watch mode
-$ npm run start:dev
+$ docker-compose up -d
 
-# production mode
-$ npm run start:prod
+Down the application
+
+$ docker-compose down
 ```
 
-## Test
+## Notes
+
+Each time when you add new package of add new environment variable in .env file you need to restart container.
 
 ```bash
-# unit tests
-$ npm run test
+$ docker-compose down
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+$ docker-compose up -d
 ```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
