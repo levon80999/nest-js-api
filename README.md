@@ -55,6 +55,12 @@ Down the application
 $ docker-compose down
 ```
 
+## Postman documentation
+
+```bash
+https://documenter.getpostman.com/view/4041962/2s93zCa1dL
+```
+
 ## Notes
 
 Each time when you add new package of add new environment variable in .env file you need to restart container.
